@@ -5,8 +5,10 @@
 ### 1) Authentication
 
 - Login: `/auth/login`
-- Signup: `/auth/signup`
+- Sign up: `/auth/signup`
 - Forgot password: `/auth/forgot_password`
+
+Note: route names are defined by controller method names in `app/modules/auth/controllers/auth.php`, so they are intentionally mixed style (`login`, `signup`, `forgot_password`).
 
 Auth controller: `app/modules/auth/controllers/auth.php`
 

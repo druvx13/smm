@@ -4,7 +4,8 @@
 
 From installer checks (`install/install/views/install.php`):
 
-- PHP >= 5.6
+- PHP >= 5.6 (legacy minimum enforced by installer)
+- Recommended runtime: PHP 7.4+ (preferably PHP 8.x for security/support)
 - MySQLi extension
 - cURL extension
 - GD extension
@@ -48,7 +49,7 @@ CREATE DATABASE smart CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 Import schema:
 
 ```bash
-mysql -u <user> -p smart < /home/runner/work/smm/smm/smartsh1_smm.sql
+mysql -u <user> -p smart < ./smartsh1_smm.sql
 ```
 
 ## 3) Configure App
